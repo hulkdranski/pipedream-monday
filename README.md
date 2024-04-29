@@ -76,7 +76,7 @@
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
-					'Authorization': 'Bearer Your_Token_authorization_here'
+					'Authorization': 'Bearer Your_Monday_Token_authorization_here'
 			    },
 				body: JSON.stringify({
 				'query': query
