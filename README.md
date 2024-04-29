@@ -25,11 +25,26 @@
  	 <p>
    		 Create a trigger and get the unique URL to trigger.
   	</p>
- 	 <p class="text-center" align="center">
+ 	 <p class="text-center" align="left">
 		<img alt="trigger" src="/img/trigger.png" width="450px" height="450px"/>
  	 </p>
   	<h3>
    		 Third Step
-  	</h3>	
+  	</h3>
+	<p>
+   		 Create and configure the data store (depends on the request).
+  	</p>
+	<p class="text-center" align="left">
+		<img alt="trigger" src="/img/data_store.png" width="450px" height="450px"/>
+ 	</p>
+	<h3>
+   		 Fourth Step
+  	</h3>
+	<p>
+   		 Create and put pipedream-code on "Node pass data between steps".
+  	</p>
+	<p class="text-center" align="left">
+		<img alt="trigger" src="/img/node.png" width="450px" height="450px"/>
+ 	</p>
 </div>
 
