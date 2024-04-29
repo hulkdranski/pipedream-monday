@@ -51,7 +51,7 @@
   	</h3>
 	<p>
    		Now you can run index.html, and don't forget to put your data, such as BoardID and Authorization Token in Script.js <br/><br/>
-  		You can make the request directly through the monday API, without using pipedream. Using this code:
+  		You can make the request directly through the monday API, I just using pipedream for study. Using this code you can do the samething whitout pipedream:
 		<p style = 'font-size:10px'>
 			
 			var projeto, status, notas
