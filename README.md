@@ -85,7 +85,7 @@
 				.then(res => res.json())
 				.then(res => console.log(JSON.stringify(res, null, 2)))
 				.catch(error => console.error("Erro ao fazer a solicitação:", error));
-		</p>
+</p>
   	</p>
 
 </div>
