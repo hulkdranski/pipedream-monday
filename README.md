@@ -26,7 +26,7 @@
     Create a trigger and get the unique URL to trigger.
   </p>
   <p class="text-center" align="center">
-		<img alt="trigger" src="/img/trigger.png" width="450px" height="450px" float="left"/>
+		<img alt="trigger" src="/img/trigger.png" width="450px" height="450px" style="float:left"/>
 	</p>
 	
 </div>
