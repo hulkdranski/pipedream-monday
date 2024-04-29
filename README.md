@@ -54,8 +54,20 @@
   		You can make the request directly through the monday API, without using pipedream. Using this code:
 		<p style = 'font-size:10px'>
 			
-			const query = `mutation {
-			    create_item (board_id: your_boardID, item_name: "Projeto-Teste", column_values: "{\\"text9\\": \\"Testando API\\", \\"project_status\\": \\"Em andamento\\"}") {
+			var projeto, status, notas
+
+			document.addEventListener("DOMContentLoaded", () => {
+				const projectForm = document.getElementById("projectForm");
+			  
+			projectForm.addEventListener("submit", (event) => {
+				event.preventDefault();
+			
+				projeto = document.getElementById("nome").value;
+				statuss = document.getElementById("status").value;
+				notas = document.getElementById("notas").value;			
+   
+   			const query = `mutation {
+			    create_item (board_id: your_boardID, item_name: "${projeto}", column_values: "{\\"text9\\": \\"${notas}\\", \\"project_status\\": \\"${statuss}\\"}") {
 			      id
 			    }
 			  }`;
