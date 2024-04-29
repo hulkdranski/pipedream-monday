@@ -55,7 +55,7 @@
 		<p style = 'font-size:10px'>
 			
 			const query = `mutation {
-			    create_item (board_id: 6482815534, item_name: "Projeto-Teste", column_values: "{\\"text9\\": \\"Testando API\\", \\"project_status\\": \\"Em andamento\\"}") {
+			    create_item (board_id: your_boardID, item_name: "Projeto-Teste", column_values: "{\\"text9\\": \\"Testando API\\", \\"project_status\\": \\"Em andamento\\"}") {
 			      id
 			    }
 			  }`;
