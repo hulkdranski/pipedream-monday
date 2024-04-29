@@ -46,5 +46,11 @@
 	<p class="text-center" align="left">
 		<img alt="trigger" src="/img/node.png" width="450px" height="450px"/>
  	</p>
+	<h3>
+   		 Finally
+  	</h3>
+	<p>
+   		 Now you can run index.html, and don't forget to put your data, such as BoardID and Authorization Token in Script.js
+  	</p>
 </div>
 
