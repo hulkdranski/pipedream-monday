@@ -1,6 +1,6 @@
 # pipedream-monday
 
-<div class="markdown-body entry-content container-lg p-3" itemprop="text">
+<div>
 	<h2 class="f4 my-3">
 		Descripction
 	</h2>
@@ -12,22 +12,24 @@
 	</h2>
 	<p>
 		First of all, you need to create the structure inside pipedream.
-  </p>
-  <h3>
-    First Step
-  </h3>
-  <p>
-    Create a workflow on pipedream.
-  </p>
-  <h3>
-    Second Step
-  </h3>
-  <p>
-    Create a trigger and get the unique URL to trigger.
-  </p>
-  <p class="text-center" align="center">
-		<img alt="trigger" src="/img/trigger.png" width="450px" height="450px" style="float:left"/>
-	</p>
-	
+  	</p>
+  	<h3>
+    		First Step
+  	</h3>
+  	<p>
+    		Create a workflow on pipedream.
+  	</p>
+  	<h3>
+    		Second Step
+ 	 </h3>
+ 	 <p>
+   		 Create a trigger and get the unique URL to trigger.
+  	</p>
+ 	 <p class="text-center" align="center">
+		<img alt="trigger" src="/img/trigger.png" width="450px" height="450px"/>
+ 	 </p>
+  	<h3>
+   		 Third Step
+  	</h3>	
 </div>
 
