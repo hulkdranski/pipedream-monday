@@ -44,7 +44,7 @@
    		 Create and put pipedream-code on "Node pass data between steps".
   	</p>
 	<p class="text-center" align="left">
-		<img alt="trigger" src="/img/node.png" width="450px" height="450px"/>
+		<img alt="trigger" src="/img/node.png" width="4650px" height="450px"/>
  	</p>
 	<h3>
    		 Finally
