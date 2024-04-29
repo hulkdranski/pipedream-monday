@@ -50,7 +50,30 @@
    		 Finally
   	</h3>
 	<p>
-   		 Now you can run index.html, and don't forget to put your data, such as BoardID and Authorization Token in Script.js
+   		Now you can run index.html, and don't forget to put your data, such as BoardID and Authorization Token in Script.js <br/><br/>
+  		You can make the request directly through the monday API, without using pipedream. Using this code:
+		<p style = 'font-size:10px'>
+			const query = `mutation {
+			    create_item (board_id: 6482815534, item_name: "Projeto-Teste", column_values: "{\\"text9\\": \\"Testando API\\", \\"project_status\\": \\"Em andamento\\"}") {
+			      id
+			    }
+			  }`;
+			  
+			fetch("https://api.monday.com/v2", {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Authorization': 'Bearer Your_Token_authorization_here'
+			    },
+				body: JSON.stringify({
+				'query': query
+			    })
+			  })
+				.then(res => res.json())
+				.then(res => console.log(JSON.stringify(res, null, 2)))
+				.catch(error => console.error("Erro ao fazer a solicitação:", error));
+		</p>
   	</p>
+
 </div>
 
