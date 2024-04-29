@@ -1,0 +1,43 @@
+var projeto, notas, status
+export default defineComponent({
+  props: {
+    myDataStore: {
+      type: "data_store",
+    },
+  },
+  async run({ steps, $ }) {
+    projeto = await this.myDataStore.get("Projeto")
+    notas = await this.myDataStore.get("Notas")
+    status = await this.myDataStore.get("Status")
+    console.log(status)
+
+    const columnValues = {
+      'text9': 'Valor de texto',
+      'project_status': 'Em andamento'
+    };
+
+    const query = `mutation {
+      create_item (board_id: your_board_id_here, item_name: "${projeto}", column_values: "{\\"text9\\": \\"${notas}\\", \\"project_status\\": \\"${status}\\"}") {
+        id
+      }
+    }`;
+
+    try {
+      const res = await fetch("https://api.monday.com/v2", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer Your_authorization _token_here'
+        },
+        body: JSON.stringify({
+          'query': query
+        })
+      });
+
+      const data = await res.json();
+      console.log(JSON.stringify(data, null, 2));
+    } catch (error) {
+      console.error("Erro ao fazer a solicitação:", error);
+    }
+  },
+});
